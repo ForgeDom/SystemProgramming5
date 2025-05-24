@@ -25,37 +25,47 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
-    private async void CalculateButton_Click(object sender, RoutedEventArgs e)
+    private async void AnalyzeButton_Click(object sender, RoutedEventArgs e)
     {
-        resultTextBlock.Text = "Розрахунок...";
         progressBar.Visibility = Visibility.Visible;
 
-        if (!double.TryParse(baseTextBox.Text, out double baseNumber))
-        {
-            MessageBox.Show("Некоректне число.");
-            progressBar.Visibility = Visibility.Collapsed;
-            return;
-        }
-
-        if (!int.TryParse(exponentTextBox.Text, out int exponent))
-        {
-            MessageBox.Show("Некоректний степінь (має бути цілим числом).");
-            progressBar.Visibility = Visibility.Collapsed;
-            return;
-        }
+        string text = inputTextBox.Text;
 
         try
         {
-            double result = await Task.Run(() => Math.Pow(baseNumber, exponent));
-            resultTextBlock.Text = $"Результат: {result}";
+            var result = await Task.Run(() => AnalyzeText(text));
+
+            vowelsTextBlock.Text = $"Голосні: {result.VowelCount}";
+            consonantsTextBlock.Text = $"Приголосні: {result.ConsonantCount}";
+            symbolsTextBlock.Text = $"Символи: {result.TotalCharacters}";
         }
         catch (Exception ex)
         {
-            resultTextBlock.Text = $"Помилка: {ex.Message}";
+            MessageBox.Show($"Помилка: {ex.Message}");
         }
         finally
         {
             progressBar.Visibility = Visibility.Collapsed;
         }
+    }
+
+    private (int VowelCount, int ConsonantCount, int TotalCharacters) AnalyzeText(string text)
+    {
+        string vowels = "аеєиіїоуюяaeiouy";
+        string consonants = "бвгґджзйклмнпрстфхцчшщbcdfghjklmnpqrstvwxz";
+
+        int vowelCount = 0;
+        int consonantCount = 0;
+        int totalChars = text.Length;
+
+        foreach (char c in text.ToLower())
+        {
+            if (vowels.Contains(c))
+                vowelCount++;
+            else if (consonants.Contains(c))
+                consonantCount++;
+        }
+
+        return (vowelCount, consonantCount, totalChars);
     }
 }
