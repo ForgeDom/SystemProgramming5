@@ -19,3 +19,6 @@ E:\VS\RiderProjects\SystemProgramming5\WpfApp1\obj\Debug\net8.0-windows\refint\W
 E:\VS\RiderProjects\SystemProgramming5\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.pdb
 E:\VS\RiderProjects\SystemProgramming5\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.genruntimeconfig.cache
 E:\VS\RiderProjects\SystemProgramming5\WpfApp1\obj\Debug\net8.0-windows\ref\WpfApp1.dll
+E:\VS\RiderProjects\SystemProgramming5\WpfApp1\bin\Debug\net8.0-windows\Ookii.Dialogs.Wpf.dll
+E:\VS\RiderProjects\SystemProgramming5\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.AssemblyReference.cache
+E:\VS\RiderProjects\SystemProgramming5\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.Up2Date
