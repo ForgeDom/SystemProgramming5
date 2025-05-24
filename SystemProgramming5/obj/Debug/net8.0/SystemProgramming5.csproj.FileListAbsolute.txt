@@ -1,0 +1,15 @@
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\bin\Debug\net8.0\SystemProgramming5.exe
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\bin\Debug\net8.0\SystemProgramming5.deps.json
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\bin\Debug\net8.0\SystemProgramming5.runtimeconfig.json
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\bin\Debug\net8.0\SystemProgramming5.dll
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\bin\Debug\net8.0\SystemProgramming5.pdb
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\obj\Debug\net8.0\SystemProgramming5.GeneratedMSBuildEditorConfig.editorconfig
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\obj\Debug\net8.0\SystemProgramming5.AssemblyInfoInputs.cache
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\obj\Debug\net8.0\SystemProgramming5.AssemblyInfo.cs
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\obj\Debug\net8.0\SystemProgramming5.csproj.CoreCompileInputs.cache
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\obj\Debug\net8.0\SystemProgramming5.sourcelink.json
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\obj\Debug\net8.0\SystemProgramming5.dll
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\obj\Debug\net8.0\refint\SystemProgramming5.dll
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\obj\Debug\net8.0\SystemProgramming5.pdb
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\obj\Debug\net8.0\SystemProgramming5.genruntimeconfig.cache
+E:\VS\RiderProjects\SystemProgramming5\SystemProgramming5\obj\Debug\net8.0\ref\SystemProgramming5.dll
