@@ -24,21 +24,29 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
     }
+
     private async void CalculateButton_Click(object sender, RoutedEventArgs e)
     {
         resultTextBlock.Text = "Розрахунок...";
         progressBar.Visibility = Visibility.Visible;
 
-        if (!int.TryParse(numberTextBox.Text, out int number) || number < 0)
+        if (!double.TryParse(baseTextBox.Text, out double baseNumber))
         {
+            MessageBox.Show("Некоректне число.");
             progressBar.Visibility = Visibility.Collapsed;
-            MessageBox.Show("Введіть коректне невід’ємне ціле число.");
+            return;
+        }
+
+        if (!int.TryParse(exponentTextBox.Text, out int exponent))
+        {
+            MessageBox.Show("Некоректний степінь (має бути цілим числом).");
+            progressBar.Visibility = Visibility.Collapsed;
             return;
         }
 
         try
         {
-            BigInteger result = await Task.Run(() => CalculateFactorial(number));
+            double result = await Task.Run(() => Math.Pow(baseNumber, exponent));
             resultTextBlock.Text = $"Результат: {result}";
         }
         catch (Exception ex)
@@ -49,15 +57,5 @@ public partial class MainWindow : Window
         {
             progressBar.Visibility = Visibility.Collapsed;
         }
-    }
-
-    private BigInteger CalculateFactorial(int n)
-    {
-        BigInteger result = 1;
-        for (int i = 2; i <= n; i++)
-        {
-            result *= i;
-        }
-        return result;
     }
 }
